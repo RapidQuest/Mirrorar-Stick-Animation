@@ -1,54 +1,64 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Exercise</title>
-  <script type="text/javascript" src="js/loadash.min.js"></script>
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <head>
+    <title>Exercise</title>
+    <script type="text/javascript" src="js/loadash.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
 
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 
-  <script type="text/javascript" src="js/mirrorar.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script type="text/javascript" src="js/mirrorar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
-  <style type="text/css">
-    svg { 
-      position:fixed; 
-      top:100px; 
-      left:0; 
-      height:100%; 
-      width:50%; 
-    }
+    <style type="text/css">
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        overflow: hidden;
+      }
+      #canvas {
+        background-color: rgb(54, 54, 54);
+      }
+      svg {
+        position: fixed;
+        top: 100px;
+        left: 0;
+        height: 100%;
+        width: 50%;
+      }
 
-    #balanceChartWrapper {
-      position: absolute;
-      top: 100px;
-      left: 50%;
-      width: 30vw;
-      height: 30vw;
-    }
+      #balanceChartWrapper {
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        width: 30vw;
+        height: 30vw;
+      }
 
-    #balanceChartCanvas {
-      transform: rotate3d(-125, 160, -215, -100deg) skew(53deg, -47deg);
-    }
+      #balanceChartCanvas {
+        transform: rotate3d(-125, 160, -215, -100deg) skew(53deg, -47deg);
+      }
+    </style>
+  </head>
 
-  </style>
-</head>
+  <body>
+    <!-- <input type="range" style="width: 80%;" min="0" max="100" value="0" class="slider" id="dataRange">
 
-<body>
+  <svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg> -->
+    <canvas id="canvas"></canvas>
 
-  <input type="range" style="width: 80%;" min="0" max="100" value="0" class="slider" id="dataRange">
-
-  <svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
-
-
-  <script type="text/javascript">
-    //Change the data file name and make sure your algorithm performs well on all 
-    // 2 data sets
-    simulateData("data/balance-test.json")
-    // simulateData("data/balance-test-new.json")
-  </script>
-
-</body>
+    <script type="text/javascript">
+      //Change the data file name and make sure your algorithm performs well on all
+      // 2 data sets
+      // simulateData("data/balance-test.json")
+      // simulateData("data/balance-test-new.json")
+    </script>
+    <script src="main.js"></script>
+    <script></script>
+  </body>
 </html>
