@@ -193,7 +193,7 @@ function drawFigure(i) {
   y2 = joints[jointMap.leftAnkle].y;
 
   if (distanceBetweenShoulders > 0) {
-    ctx.fillStyle = "red";
+    ctx.fillStyle = "#fa3e41";
     ctx.beginPath();
     ctx.moveTo(x2 + rectWith, y2);
     ctx.lineTo(x2 + rectWith + 25, y2 + 25);
@@ -203,7 +203,7 @@ function drawFigure(i) {
     ctx.closePath();
     ctx.fill();
   } else {
-    ctx.fillStyle = "red";
+    ctx.fillStyle = "#fa3e41";
     ctx.beginPath();
     ctx.moveTo(x2 + rectWith, y2);
     ctx.lineTo(x2 + rectWith - 25, y2 + 25);
@@ -221,7 +221,7 @@ function drawFigure(i) {
   y2 = joints[jointMap.rightAnkle].y;
 
   if (distanceBetweenShoulders > 0) {
-    ctx.fillStyle = "red";
+    ctx.fillStyle = "#fa3e41";
     ctx.beginPath();
     ctx.moveTo(x2 + rectWith, y2);
     ctx.lineTo(x2 + rectWith + 25, y2 + 25);
@@ -232,7 +232,7 @@ function drawFigure(i) {
     ctx.fill();
     ctx.beginPath();
   } else {
-    ctx.fillStyle = "red";
+    ctx.fillStyle = "#fa3e41";
     ctx.beginPath();
     ctx.moveTo(x2 + rectWith, y2);
     ctx.lineTo(x2 + rectWith - 25, y2 + 25);
