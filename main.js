@@ -181,22 +181,9 @@ function drawFigure(i) {
   const radius = (y1 - y2) / 2;
   const mid = { x: (x1 + x2) / 2, y: (y1 + y2) / 2 };
 
-  // ctx.fillStyle = "#f7f7f7";
-  // ctx.save();
-  // ctx.scale(2, 1);
-  // ctx.beginPath();
-  // ctx.arc(mid.x, mid.y, radius, 0, 2 * Math.PI, false);
-  // ctx.restore();
-  // ctx.fillStyle = "#000000";
-  // ctx.fill();
-  // ctx.lineWidth = 2;
-  // ctx.strokeStyle = "yellow";
-  // ctx.stroke();
+  ctx.fillStyle = "#f7f7f7";
   ctx.beginPath();
-  ctx.save();
-  ctx.scale(1, 2);
-  ctx.arc(mid.x, mid.y, radius + 15, 0, 2 * Math.PI);
-  ctx.restore();
+  ctx.arc(mid.x, mid.y, radius + 15, 0, 2 * Math.PI, false);
   ctx.fill();
 
   //drawing shoes left
